@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최솟값 구하기</title>
+</head>
+<body>
+    <script>
+        function solution(a,b,c){
+            let answer;
+            
+            if(a<b) answer = a;
+            else answer = b;        //  a 와 b 중 작은값을 answer에 넣기
+            if(c<answer) answer = c;    // answer와 c를 비교해 최솟값 찾기
+
+            return answer;
+        }
+
+
+        console.log(solution(5,12,10))
+
+    </script>
+
+
+</body>
+</html>
