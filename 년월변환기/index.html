@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+            function meatAt(year,month,date){
+
+                if(year && month && date){
+                    return `${year}/${month}/${date}`
+                }else if(year && month){
+                    return `${year}년 ${month}월`
+                }else if(year){
+                    return `${year}년`
+                }
+                
+
+            }
+
+            console.log(meatAt(2022,4,23))
+            console.log(meatAt(2022,3))
+            console.log(meatAt(2022))
+    </script>
+
+    
+</body>
+</html>
